@@ -22,8 +22,18 @@
   <link rel="stylesheet" href="css/building.css">
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/terminal.css">
 </head>
 <body>
+
+  <!-- Terminal Intro -->
+  <div id="terminal-intro">
+    <div class="terminal-prompt">
+      <span class="terminal-prompt-text"></span><span class="terminal-command"></span><span class="terminal-cursor"></span>
+    </div>
+    <div class="terminal-output"></div>
+    <div class="terminal-hint">press enter</div>
+  </div>
 
   <!-- Custom cursor -->
   <div id="cursor" aria-hidden="true"></div>
@@ -252,6 +262,7 @@
 
   <!-- App scripts -->
   <script src="js/hero.js"></script>
+  <script src="js/terminal.js"></script>
   <script src="js/work.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/main.js"></script>

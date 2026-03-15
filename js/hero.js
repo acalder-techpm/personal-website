@@ -130,7 +130,7 @@
     gsap.set('#hero-canvas',       { opacity: 0 });
 
     // Build entrance timeline
-    var tl = gsap.timeline({ delay: 0.3, defaults: { ease: 'power3.out' } });
+    var tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
 
     tl.to('#hero-canvas',       { opacity: 0.6, duration: 1.8, ease: 'power2.inOut' }, 0)
       .to('.hero-bg-number',    { opacity: 0.7, scale: 1, duration: 1.6, ease: 'power2.out' }, 0)
@@ -140,5 +140,13 @@
       .to('.hero-tagline',      { opacity: 1, y: 0, duration: 0.65 }, 0.8)
       .to('.hero-cta',          { opacity: 1, y: 0, duration: 0.55 }, 0.95)
       .to('.player-card',       { opacity: 1, x: 0, rotateY: 0, duration: 1.0, ease: 'power2.out' }, 0.5);
+
+    // If terminal intro exists, store timeline for deferred playback
+    // Otherwise play immediately (e.g. direct page navigation)
+    if (document.getElementById('terminal-intro')) {
+      window.__heroTimeline = tl;
+    } else {
+      tl.delay(0.3).play();
+    }
   }
 })();

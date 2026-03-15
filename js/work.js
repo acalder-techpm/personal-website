@@ -3,7 +3,7 @@
     {
       id:      'bamboohr',
       name:    'BambooHR',
-      logo:    'assets/images/logo-bamboohr.png',
+      logo:    'assets/images/logo-bamboohr.svg',
       role:    'Product Manager — Platform & AI',
       dates:   'Jul 2025 — Present',
       desc:    'Leading platform PM work across design systems, AI tooling, accessibility, and frontend infrastructure. Spanning three teams: design system, FE core libs, and AI-assisted SDLC.',
@@ -16,7 +16,7 @@
     {
       id:      'travelpass',
       name:    'Travelpass Group',
-      logo:    'assets/images/logo-travelpass.png',
+      logo:    'assets/images/logo-travelpass.svg',
       role:    'Senior Product Manager',
       dates:   'Jan 2024 — Jul 2025',
       desc:    'Led mobile product strategy across iOS and Android — content exploration, social engagement, and community. Introduced GPT-powered tools that cut design feedback cycles by 40%.',
@@ -29,7 +29,7 @@
     {
       id:      'learnexus',
       name:    'Learnexus',
-      logo:    'assets/images/logo-learnexus.png',
+      logo:    'assets/images/logo-learnexus.svg',
       role:    'Director of Product Management',
       dates:   'Jul 2022 — Jan 2024',
       desc:    'Transformed a talent marketplace into a video-first, AI-driven platform. Championed AI features from content generation to chatbots, improving match accuracy and user satisfaction.',
@@ -42,7 +42,7 @@
     {
       id:      'grow',
       name:    'Grow.com',
-      logo:    'assets/images/logo-grow.png',
+      logo:    'assets/images/logo-grow.svg',
       role:    'Product Manager — Data Visualization',
       dates:   'May 2021 — Jul 2022',
       desc:    'Led data visualization for a full-stack BI platform. Released 20 new features, reduced customer-reported issues by 50%, and established 25+ KPIs for team and app performance.',
@@ -55,7 +55,7 @@
     {
       id:      'topgolf',
       name:    'TopGolf',
-      logo:    'assets/images/logo-topgolf.png',
+      logo:    'assets/images/logo-topgolf.svg',
       role:    'Business Strategy Intern',
       dates:   'Apr 2017 — Sep 2019',
       desc:    'Grew the summer academy program by 200%, saved $35K annually through cost analysis, and networked $25K in charitable donations. First lesson in using data to make decisions.',

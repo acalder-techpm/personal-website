@@ -200,4 +200,30 @@
     stagger:  0.12,
     ease:    'power3.out',
   });
+
+  // ── Stat counter animation (fires once when work section scrolls into view)
+  ScrollTrigger.create({
+    trigger: '#work',
+    start: 'top 60%',
+    once: true,
+    onEnter: function () {
+      document.querySelectorAll('.work-entry.active .work-stat-value').forEach(function (el) {
+        var raw = el.textContent.trim();
+        var match = raw.match(/^([^0-9]*)(\d+)(.*)$/);
+        if (!match) return;
+        var prefix = match[1];
+        var target = parseInt(match[2], 10);
+        var suffix = match[3];
+        var obj = { val: 0 };
+        gsap.to(obj, {
+          val: target,
+          duration: 1.4,
+          ease: 'power2.out',
+          onUpdate: function () {
+            el.textContent = prefix + Math.round(obj.val) + suffix;
+          },
+        });
+      });
+    },
+  });
 })();

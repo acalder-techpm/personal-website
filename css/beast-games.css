@@ -1,0 +1,112 @@
+.section-beast {
+  min-height: 100vh;
+  padding: 120px 0;
+  background: var(--bg2);
+  position: relative;
+  overflow: hidden;
+  transition: background 0.4s;
+}
+
+/* Giant watermark number */
+.beast-number {
+  position: absolute;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(200px, 35vw, 500px);
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(30, 80, 255, 0.08);
+  line-height: 1;
+  left: -2vw;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+.beast-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 6vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.beast-content { }
+
+.beast-headline {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(44px, 5.5vw, 80px);
+  line-height: 1.0;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.beast-headline em {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.beast-body {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.9;
+  max-width: 480px;
+  margin-bottom: 36px;
+}
+
+.beast-logos {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.beast-logo {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.5;
+  transition: opacity 0.2s, filter 0.4s;
+}
+
+[data-theme="light"] .beast-logo {
+  filter: brightness(0);
+}
+
+.beast-logo:hover {
+  opacity: 0.9;
+}
+
+/* Photo grid */
+.beast-photos { }
+
+.beast-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 12px;
+}
+
+.beast-photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.beast-photo-main {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  aspect-ratio: 2 / 3;
+}
+
+.beast-photo-sm {
+  grid-column: 2;
+  aspect-ratio: 4 / 3;
+}

@@ -1,0 +1,69 @@
+.section-contact {
+  min-height: 60vh;
+  padding: 120px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 6vw;
+}
+
+.contact-headline {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(56px, 8vw, 120px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.contact-headline em {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.contact-sub {
+  font-size: 15px;
+  color: var(--text-muted);
+  max-width: 480px;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 15px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 16px;
+  max-width: 480px;
+  transition: color 0.2s, border-color 0.2s;
+  cursor: none;
+}
+
+.contact-link:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.contact-link i {
+  font-size: 18px;
+  color: var(--accent);
+  width: 22px;
+  text-align: center;
+  flex-shrink: 0;
+  transition: color 0.4s;
+}

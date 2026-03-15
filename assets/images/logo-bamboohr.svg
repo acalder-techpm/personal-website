@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="140" height="32"><text x="0" y="24" font-family="Arial,sans-serif" font-weight="700" font-size="20" fill="currentColor">BambooHR</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 44">
+  <defs>
+    <style>
+      text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+  <path d="M8 8 C10 2, 16 2, 18 8 C16 6, 12 6, 8 8Z" fill="#333" opacity="0.9"/>
+  <path d="M13 2 L13 12" stroke="#333" stroke-width="1.2" fill="none" opacity="0.9"/>
+  <text x="24" y="32" font-size="30" font-weight="300" fill="#333" letter-spacing="-0.3">bamboo</text>
+  <text x="140" y="32" font-size="30" font-weight="700" fill="#333" letter-spacing="-0.3">hr</text>
+</svg>
